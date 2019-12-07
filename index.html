@@ -12,11 +12,25 @@
       #messages li { padding: 5px 10px; }
       #messages li:nth-child(odd) { background: #eee; }
     </style>
+
+    <script>
+        function success() {
+            if(document.getElementById("m").value == "")
+            {
+                document.getElementById("send").disabled = true;
+            }
+            else 
+            {  
+                document.getElementById("send").disabled = false;
+            }
+        }
+    </script>
   </head>
   <body>
     <ul id="messages"></ul>
     <form action="">
-      <input id="m" autocomplete="off" /><button>Send</button>
+      <input id="m" onkeyup="success()" autocomplete="off" disabled/>
+      <button id="send">Send</button>
     </form>
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
