@@ -1,13 +1,15 @@
 {
   "name": "herokuplayground",
   "version": "1.0.0",
-  "engines": {
-    "node": "12.13.1"
-  },
   "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/KSherman97/HerokuPlayground/issues"
   },
-  "homepage": "https://github.com/KSherman97/HerokuPlayground#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "homepage": "https://github.com/KSherman97/HerokuPlayground#readme"
 }
