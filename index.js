@@ -11,3 +11,7 @@ app.get('/', function(req, res){
 http.listen(port, function(){
   console.log('listening on *:3000');
 });
+
+io.on('connection', function(socket){
+    console.log('A user has connected');
+});
