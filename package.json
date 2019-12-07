@@ -2,7 +2,8 @@
   "name": "herokuplayground",
   "version": "1.0.0",
   "engines": {
-    "node": "12.x"
+    "node": "12.13.1" 
+    // v12.13.1 6.12.1
   },
   "description": "",
   "scripts": {
